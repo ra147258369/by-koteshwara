@@ -1,0 +1,188 @@
+<html>
+<body style="background-color: yellow;">
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">home</a>
+      <a href="#">signin</a>
+      <p style="color:orange">register</p>
+    </div>
+  </div>
+</div>
+<div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">?
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <h4> How to register?</h4>
+      <p style="color:blue">1.Enter email</p>
+      <p style="color:lightgreen">2.Enter Password</p>
+      <p style="color:lightgreen">3.repeat same password</p>
+      <p style="color:green">4.click on register</p>
+      <p style="color:red">already have an account? signin</p> 
+    </div>
+  </div>
+</div>
+
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+<style type="text/css">* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: outline-block;
+border: none;
+background: blue;}
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: outline-block;
+  border: none;
+  background: lightgreen;
+}
+
+input[type=text]:focus {
+background-color: red;
+outline: none
+}
+input[type=password]:focus {
+  background-color: blue ;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: blue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: red;
+  text-align: center;
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a pink background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: pink;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: grey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</form>
+</body>
+</html>
